@@ -1,0 +1,10 @@
+asyncpg==0.30.0
+fastapi==0.115.12
+uvicorn==0.34.2
+tortoise-orm==0.25.0
+databases[postgresql]
+python-dotenv==1.1.0
+pydantic-settings==2.9.1
+apscheduler==3.11.0
+aerich==0.8.2
+pythonanywhere
