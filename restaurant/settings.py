@@ -1,6 +1,8 @@
 from pathlib import Path
 import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -11,7 +13,7 @@ SECRET_KEY = "django-insecure-z*zvrrk9$4wy3&v$^&mv@2dpv$2@sfsxkmgz*-z77!r+c0o*(=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG")
 
-ALLOWED_HOSTS = ["yousifshafee.pythonanywhere.com"]
+ALLOWED_HOSTS = ["yousifshafee.pythonanywhere.com", "localhost", "127.0.0.1"]
 
 
 # Application definition
@@ -60,7 +62,7 @@ WSGI_APPLICATION = "restaurant.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-print("Hello There",os.getenv("DB_HOST"))
+print("Hello There", os.getenv("DB_HOST"))
 
 DATABASES = {
     "default": {
