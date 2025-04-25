@@ -60,6 +60,8 @@ WSGI_APPLICATION = "restaurant.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+print("Hello There",os.getenv("DB_HOST"))
+
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
