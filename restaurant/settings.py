@@ -63,6 +63,8 @@ DATABASES = {
         "PASSWORD": "2jZas:chV!S6jHd",
         "HOST": "yousifshafee.mysql.pythonanywhere-services.com",
         "PORT": "3306",
+    }
+}
 
 REST_FRAMEWORK = {
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
