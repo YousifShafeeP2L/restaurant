@@ -10,7 +10,13 @@ SECRET_KEY = "django-insecure-z*zvrrk9$4wy3&v$^&mv@2dpv$2@sfsxkmgz*-z77!r+c0o*(=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["yousifshafee.pythonanywhere.com", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = [
+    "yousifshafee.pythonanywhere.com",
+    "localhost",
+    "127.0.0.1",
+    "https://lovable.dev/projects/a98ea5fe-ed07-4bc3-bc4d-9152126b3c55",
+    "https://a98ea5fe-ed07-4bc3-bc4d-9152126b3c55.lovableproject.com"
+]
 
 
 # Application definition
