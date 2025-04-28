@@ -21,6 +21,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "rest_framework",
+    "drf_spectacular",
     "main",
 ]
 
@@ -62,10 +63,15 @@ DATABASES = {
         "PASSWORD": "2jZas:chV!S6jHd",
         "HOST": "yousifshafee.mysql.pythonanywhere-services.com",
         "PORT": "3306",
-        "OPTIONS": {
-            "sql_mode": "traditional",
-        },
-    }
+
+REST_FRAMEWORK = {
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+}
+
+SPECTACULAR_SETTINGS = {
+    "TITLE": "Restaurant API",
+    "DESCRIPTION": "API for the Restaurant",
+    "VERSION": "1.0.0",
 }
 
 
