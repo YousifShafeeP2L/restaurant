@@ -2,10 +2,10 @@ from pathlib import Path
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+load_dotenv()
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "django-insecure-z*zvrrk9$4wy3&v$^&mv@2dpv$2@sfsxkmgz*-z77!r+c0o*(="
